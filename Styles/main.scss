@@ -1,7 +1,7 @@
-$main-color: #283149;
-$second-color: #404b69;
-$third-color: #f73859;
-$last-color: #dbedf3;
+$main-color: #525252;
+$second-color: #414141;
+$third-color: #313131;
+$last-color: #ec625f;
 
 @import url("https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css");
 @import url("https://unpkg.com/css.gg@2.0.0/icons/css/heart.css");
@@ -24,6 +24,7 @@ $last-color: #dbedf3;
 * p {
   font-family: "Source Code Pro", monospace;
 }
+
 body {
   margin: 0;
   width: 100%;
@@ -31,6 +32,9 @@ body {
   display: grid;
   justify-content: center;
   background-color: $main-color;
+}
+.MainContainer {
+  height: 1700px;
 }
 /*  */
 /* Navbar */
@@ -78,6 +82,9 @@ body {
   border-radius: 13px;
   color: brown;
 }
+.navbar ul li a:not(hover) {
+  transition: 1s;
+}
 .navbar input {
   background-color: $second-color;
   padding: 0px 15px;
@@ -86,7 +93,7 @@ body {
   width: 250px;
   height: 30px;
   margin-left: 30px;
-  border-radius: 10px;
+  border-radius: 13px;
   box-shadow: 0px 0px 4px 0px $last-color;
 }
 /*  */
@@ -101,16 +108,16 @@ body {
 /*  */
 .main-image-container {
   padding: 1px 10px;
-  width: 100%;
+  width: 1058px;
   height: 400px;
   margin-top: 15px;
   border-radius: 13px;
   background-position: 100%;
   background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614840035_152-p-fon-dlya-shkolnogo-saita-223.jpg);
   box-shadow: 0px 0px 0px 0px;
-  border: 1px solid $second-color;
+  border: 1px solid $last-color;
   text-align: center;
-  color: #62ff00;
+  color: #ffffff;
   font-size: 25px;
   display: grid;
   grid-template-columns: 100%;
@@ -129,47 +136,47 @@ body {
   border-bottom-left-radius: 13px;
   border-top-right-radius: 13px;
   border-bottom-right-radius: 13px;
-  width: 100%;
+  width: 1058px;
   height: 300px;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 33.3% 33.3% 33.3%;
   text-align: center;
   color: white;
-  gap: 1px;
 }
 .cardlogo {
   padding: 10px;
 }
 .cardtext {
   padding: 10px;
+  align-content: center;
 }
 .cardpricing {
+  width: 352.31px;
   padding: 20px;
-  width: 263px;
 }
 .cardsinfo .card-item1 {
-  border: 1px solid $second-color;
+  border: 1px solid $last-color;
   display: grid;
   grid-template-columns: 100px 62%;
   border-radius: 13px;
   background-color: $third-color;
 }
 .cardsinfo .card-item2 {
-  border: 1px solid $second-color;
+  border: 1px solid $last-color;
   display: grid;
   grid-template-columns: 100px 62%;
   border-radius: 13px;
   background-color: $third-color;
 }
 .cardsinfo .card-item3 {
-  border: 1px solid $second-color;
+  border: 1px solid $last-color;
   display: grid;
   grid-template-columns: 100px 62%;
   border-radius: 13px;
   background-color: $third-color;
 }
 .cardsinfo .card-item4 {
-  border: 1px solid $second-color;
+  border: 1px solid $last-color;
   display: grid;
   grid-template-columns: 100px 62%;
   border-radius: 13px;
@@ -179,6 +186,18 @@ body {
   transition: all 0.5s;
   box-shadow: 0px 0px 10px 0px $third-color;
   transform: translateY(-10px);
+}
+.card-item1:not(hover) {
+  transition: 0.5s;
+}
+.card-item2:not(hover) {
+  transition: 0.5s;
+}
+.card-item3:not(hover) {
+  transition: 0.5s;
+}
+.card-item4:not(hover) {
+  transition: 0.5s;
 }
 .card-item2:hover {
   transition: all 0.5s;
@@ -197,7 +216,7 @@ body {
 }
 // Other Stuff
 .otherstuff {
-  margin-top: 40px;
+  margin-top: 15px;
   border-radius: 13px;
   width: 1058px;
   display: flex;
@@ -206,12 +225,12 @@ body {
   border-radius: 13px;
   width: 50%;
   height: 300px;
-  border: 1px solid red;
+  border: 1px solid $last-color;
 }
 .stuffimage img {
   width: 100%;
   height: 100%;
-  border-radius: 15px;
+  border-radius: 13px;
 }
 .stuffinfo {
   padding: 20px 5px;
@@ -221,40 +240,47 @@ body {
 }
 // Other Stuff Buttons
 .otherstuff .stuffbtn1 {
-  background-color: $third-color;
-  color: white;
+  background-color: $second-color;
+  color: $last-color;
   border-radius: 10px;
 }
-// Image DIv Gallery
-.gallery {
-  margin-top: 15px;
-  text-align: center;
-  border-radius: 13px;
+// Image Div Gallery
+.Gallery {
+  margin-top: 13px;
   width: 1058px;
-  height: 750px;
+  height: 30%;
+  border: 2px solid $last-color;
+  border-radius: 13px;
+  text-align: center;
   background-color: $second-color;
 }
-.gallery h5 {
-  font-size: 50px;
-  color: #dbedf3;
+.Gallery h5 {
+  font-size: 40px;
+  color: white;
+  background-color: $second-color;
+  border-radius: 13px;
+  padding: 10px 16px;
 }
-.imagegallery {
+.galleryimages {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: 200px 200px 200px 200px 200px;
   justify-content: center;
   align-content: center;
   gap: 10px;
+  padding: 10px 16px;
 }
-.imagegallery div {
+.galleryimages div {
   width: 200px;
   height: 200px;
 }
-.imagegallery img {
+.galleryimages img {
   width: 200px;
   height: 200px;
   border-radius: 13px;
 }
+// Footer
 footer h6 {
+  color: $last-color;
   margin-top: 15px;
   background-color: $second-color;
   text-align: center;
